@@ -5,8 +5,6 @@ parameters:
   bootstrapFiles:
     - tests/phpstan/phpstan-bootstrap.php
   paths:
-    - ./
-  excludes_analyse:
-    - vendor
-  scanDirectories:
-    - vendor/otgs/ui
+    - classes
+    - inc
+    - sitepress.php
