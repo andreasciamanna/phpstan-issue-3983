@@ -2,41 +2,24 @@
     "name": "wpml/core",
     "description": "WPML Core",
     "license": "GPL-2.0-only",
-    "homepage": "https://wpml.org",
     "type": "wordpress-plugin",
-    "authors": [
-        {
-            "name": "Andrea Sciamanna",
-            "email": "andrea.s@onthegosystems.com",
-            "homepage": "https://wpml.org"
-        },
-        {
-            "name": "Bruce Pearsons",
-            "email": "bruce.p@onthegosystems.com",
-            "homepage": "https://wpml.org"
-        }
-    ],
-    "config": {
-        "sort-packages": true,
-        "platform": {
-            "php": "5.6"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "wpml/collect": "dev-hotfix/wpmlga-766",
         "wpml/core-api": "dev-hotfix/wpmlga-766",
         "wpml/fp": "dev-hotfix/wpmlga-766",
-        "wpml/wp": "dev-hotfix/wpmlga-766"
+        "wpml/wp": "dev-hotfix/wpmlga-766",
+        "otgs/ui": "dev-master"
     },
     "autoload": {
         "classmap": [
             "classes/"
         ]
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require-dev": {
         "phpstan/phpstan": "^0.12.50",
+        "phpstan/extension-installer": "^1.0",
         "szepeviktor/phpstan-wordpress": "^0.6.6"
     }
 }
